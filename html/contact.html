@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <img src="../asset/roket.png" alt="Roket">
+    <div class="container">
+        <a href="../index.html" class="fa-solid fa-circle-left" id="kk"></a>
+        <h1>Hubungi Kami</h1>
+        <form id="contact-form" autocomplete="off">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan Nama Kamu" onblur="capitalizeFirstLetter('name')" required>
+            </div>
+            <div class="form-group">
+                <label for="class">Kelas</label>
+                <input type="text" id="class" name="class" placeholder="X/XI/XII Jurusan" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" placeholder="Disini Pesan Kamu" onblur="capitalizeFirstLetter('message')" required></textarea>
+            </div>
+            <p class="info">*Pesan ini akan langsung di kirim ke WhatsApp</p>
+            <button type="submit" id="submit-btn">Kirim</button>
+        </form>
+    </div>
+    
+    <script src="../js/contact.js"></script>
+</body>
+</html>

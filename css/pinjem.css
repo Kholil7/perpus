@@ -1,0 +1,141 @@
+.container {
+    margin: auto;
+    width: 100vw;
+}
+
+#kk{
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#kk:active{
+    transform: translateY(2px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.pinjamGuru{
+    margin: 10px;
+}
+
+.pinjamSiswa {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pinjam h1 {
+    text-align: left;
+    margin: 0 0 20px; /* Gunakan margin untuk memisahkan judul dari elemen-elemen lainnya */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    min-width: 100px;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    padding: 8px;
+    width: 100%; /* Biarkan lebar input menyesuaikan parentnya */
+    box-sizing: border-box; /* Termasuk padding dalam perhitungan lebar */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline-color: rgb(0, 0, 0);
+}
+
+#nisn,
+#no,
+#nip {
+    padding: 8px;
+    width: 100%; /* Biarkan lebar input menyesuaikan parentnya */
+    box-sizing: border-box; /* Termasuk padding dalam perhitungan lebar */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline-color: rgb(0, 0, 0);
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.content{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2px;
+    display: none;
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Hitam dengan opacity 60% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Pastikan lebih tinggi dari elemen lain */
+  }
+  
+.loading-text {
+    color: white;
+    font-size: 24px;
+}
+  
+
+@media screen and (max-width: 800px){
+    .pinjam{
+        margin-top: 65px;
+    }
+    .content{
+        text-align: justify;
+        width: 300px;
+
+    }
+}

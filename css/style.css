@@ -1,0 +1,581 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);    
+    color: white;
+    overflow-x: hidden;
+    animation: up .5s ease-in;
+}
+
+.custom-shape-divider-bottom-1716864801 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1000;
+}
+
+.custom-shape-divider-bottom-1716864801 svg {
+    animation: slide-in 1s ease-in;
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1716864801 .shape-fill {
+    fill: #FFFFFF;
+}
+
+nav ul{
+    display: flex;
+    padding-top: 20px;
+}
+
+nav .line{
+    display: none;
+}
+
+nav ul li{
+    list-style: none;
+    padding-left: 25px;
+}
+
+nav ul li:hover{
+    opacity: 70%;
+    transition: .3s;
+}
+
+nav ul li:active{
+    opacity: 70%;
+    transition: .3s;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav li .pinjemGuru{
+    background-color: #7bdd7b;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+nav li .pinjem{
+    background-color: #33BAF4;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+nav li .pinjem:active{
+    transform: translateY(2px);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.616);
+    transition: 0.2s;
+}
+
+/* Menu toggle */
+
+.menu-toggle{
+    display: none;
+  }
+
+/* main */
+
+.layer1{
+    display: flex;
+}
+
+.title{
+    padding-top: 120px;
+    margin-left: 90px;
+}
+
+.layer1 h1,
+h4{
+    animation: slide-right .5s ease-in;
+}
+
+.layer1 a{
+    animation: slide-in 2s ease-in;
+}
+
+.title h1{
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+.title h4{
+    width: 300px;
+    font-size: 30px;
+}
+
+.title a{
+    color: white;
+    text-decoration: none;
+}
+
+aside{
+    display: flex;
+}
+
+.bg,
+.book{
+    animation: slide-bottom 1.5s ease-in;
+}
+
+.bg{
+    width: 600px;
+    position: relative;
+    top: -40px;
+    right: -150px;
+    z-index: -1;
+    height: 600px;
+}
+
+.book{
+    position: relative;
+    width: 390px;
+    left: -380px;
+    top: 60px;
+    height: 400px;
+}
+
+.bgk,.bookk{
+    display: none;
+}
+
+.layer2{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.layer2 hr{
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.quotes{
+    width: 200px;
+    text-align: center;
+}
+
+.motivation{
+    width: 200px;
+    text-align: center;
+}
+
+.openbook{
+    width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.layer3{
+    padding-top: 50px;
+    height: 100vh;
+}
+
+.layer3 h1,hr{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.layer3 h1{
+    padding-bottom: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.storyimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.storyimg img {
+    width: 400px; 
+    height: 300px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.storyimg .onek:hover,
+.storyimg .twok:hover,
+.storyimg .threek:hover,
+.storyimg .fourk:hover,
+.storyimg .fivek:hover,
+.storyimg .sixk:hover {
+    margin-bottom: 30px;
+    transition: .1s all;
+    transform: scale(1.1); /* Efek zoom in */
+    box-shadow: #FFFFFF 2px 2px 20px 10px;
+    border-radius: 20px;
+}
+
+/* footer */
+
+footer{
+    color: rgb(0, 0, 0);
+}
+
+.bgg{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(155, 155, 155);
+    margin-top: 200px;
+}
+
+.copyright{
+    width: 100%;
+    background-color: gray;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.copyright a:hover{
+    opacity: 70%;
+}
+
+.copyright p{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+
+}
+
+.logo .tkj{
+    margin-right: 30px;
+    margin-top: 25px;
+}
+
+.logo .com{
+    width: 130px;
+    height: 130px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1200px){
+    .layer1 .bg,.book{
+        display: none;
+    }
+    .layer1 .title{
+        padding-bottom: 800px;
+    }
+    .layer1 h1{
+        margin-top: 80px;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap; /* Memungkinkan flex items untuk "melilit" ke baris baru */
+        justify-content: flex-start; /* Mulai dari kiri */
+    }
+    
+    .gallery img {
+        flex: 1 0 auto; /* Memastikan gambar memanfaatkan ruang yang tersedia */
+        margin: 5px; /* Jarak antara gambar */
+        max-width: calc(33.33% - 10px); /* Membuat 3 gambar per baris dengan jarak 5px */
+        object-fit: cover; /* Gambar akan mengisi seluruh ruang tanpa mengubah rasio aspeknya */
+    }
+    .bgg{
+        margin-top: 0;
+    }
+    .layer2{
+        padding-top: 500px;
+        padding-bottom: 0;
+    }
+    .layer3{
+        padding-top: 0;
+    }
+    .custom-shape-divider-bottom-1716864801{
+        z-index: -1000;
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    nav ul{
+        padding: 0;
+        margin: 0;
+    }
+    .menu {
+    display: none;
+    position: relative;
+    width: 100vw;
+    margin-left: -20px;
+    padding-left: 20px;
+    z-index: 1000;
+    background-color: #FFCC70;
+    padding-bottom: 15px;
+    animation: swing-down 0.5s ease-in-out;
+    }
+
+    #menu-toggle:checked ~ .menu {
+    display: block;
+    }
+    nav{
+        width: 100vw;
+        height: 70px;
+        padding: 20px;
+        background-color: #FFCC70;
+    }
+    nav .line{
+        width: 300px;
+        padding: 0;
+        margin: 0;
+        display: block;
+        padding-top: 4px;
+    }
+    nav li .pinjem{
+        font-size: 16px;
+    }
+      nav ul li{
+        padding: 0;
+        padding-top: 10px;
+      }
+      nav ul li a{
+        font-size: 13px;
+      }
+      .menu-toggle input{
+        position: absolute;
+        top: 28px;
+        left: 18px;
+        width: 40px;
+        height: 32px;
+        opacity: 0;
+      }
+      .menu-toggle{
+        display: inline-flex;
+        font-size: 40px;
+      }
+    .title{
+        padding: 0;
+        margin: 0;
+    }
+    .bgk,.bookk{
+        display: flex;
+        animation: slide-bottom 1.5s ease-in;
+    }
+    .bgk{
+        position: relative;
+        z-index: -1;
+        top: 30px;
+        width: 330px;
+        left: 15px;
+    }
+    .bookk{
+        position: relative;
+        left: -265px;
+        width: 260px;
+        height: 280px;
+        top: 60px;
+    }
+    .layer1{
+        display: block;
+        height: 100vh;
+    }
+    .layer1 h1{
+        font-size: 65px;
+        padding-left: 15px;
+        padding-top: 0;
+        margin-top: 0;
+        animation: slide-right .5s ease-in;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid;
+        width: 0;
+        animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+    }
+    .layer1 h4{
+        font-size: 20px;
+        padding-left: 15px;
+        animation: slide-right .5s ease-in;
+    }
+    .layer1 a{
+        padding-left: 15px;
+    }
+    .bg{
+        width: 50px;
+        position: relative;
+        z-index: -1;
+        height: 60px;
+        display: none;
+    }
+
+    .layer2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 400px;
+    }
+    .book{
+        position: relative;
+        top: 60px;
+        height: 40px;
+        display: none;
+    }
+    .openbook{
+        width: 200px;
+    }
+    .layer3{
+        height: 100vh;
+        padding-top: 500px;
+    }
+    .storyimg img{
+        width: 350px;
+        height: 250px;
+    }
+    footer{
+        margin-top: 1500px;
+    }
+    footer p{
+        font-size: 13px;
+    }
+    .gallery {
+        flex-direction: column; /* Mengubah arah tata letak menjadi vertikal */
+        align-items: center; /* Pusatkan gambar secara horizontal */
+    }
+
+    .copyright{
+        height: 200px;
+    }
+
+    .storyimg:hover{
+        padding: 18px;
+    }
+
+    .gallery img {
+        max-width: 100%; /* Lebar gambar mengisi lebar galeri */
+        margin: 5px 0; /* Sedikit jarak antara gambar */
+    }
+    .custom-shape-divider-bottom-1716864801{
+        z-index: -1000;
+        display: none;
+    }
+    .quotes {
+        opacity: 0;
+        transform: translateY(50px); /* Mulai dari bawah */
+        transition: opacity .1s ease-in-out, transform 1s ease-in-out; /* Transisi untuk opacity dan transform */
+    }
+    
+    .quotes.fade-up {
+        opacity: 1;
+        transform: translateY(0); /* Akhir di atas */
+    }
+    
+}
+
+@media screen and (max-height: 570px){
+    .storyimg img{
+        width: 300px;
+        height: 220px;
+    }
+}
+
+/* Animasi */
+
+@keyframes up{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-bottom{
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 100%;
+      }
+}
+
+@keyframes slide-right{
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 100%;
+      }
+}
+
+@keyframes slide-in{
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 100%;
+      }
+}
+
+@keyframes swing-down {
+    0% {
+        transform: translateY(-20px); /* Mulai sedikit di atas */
+    }
+    50% {
+        transform: translateY(10px); /* Bounce ke atas sedikit */
+    }
+    100% {
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: rgb(255, 255, 255)}
+    100% {border-right-color: transparent}
+}
